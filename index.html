@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePad</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="container mx-auto w-10/12 pt-7">
+            <div class="mockup-window border bg-base-300">
+                <div class="flex p-5 bg-base-200 ">
+                    <div class="navbar bg-base-100 rounded-xl px-4">
+                        <div class="navbar-start">
+                          <div class="flex gap-4">
+                            <button id="bold"><i class="fa fa-bold" aria-hidden="true"></i></button>
+                            <button id="italic"><i class="fa fa-italic" aria-hidden="true"></i></button>
+                            <button id="underline"><i class="fa fa-underline" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                        <div class="navbar-center flex gap-4">
+                          <button id="left"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+                          <button id="center"><i class="fa fa-align-center" aria-hidden="true"></i></button>
+                          <button id="right"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+                          <button id="justify"><i class="fa fa-align-justify" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="navbar-end flex gap-4">
+                          <!-- <button class="w-14 bg-gray-200 p-1 rounded-lg h-10 min-h-10 " id="increase">A <i class="fa fa-caret-up" aria-hidden="true"></i></button>
+                          <button class="w-14 bg-gray-200 p-1 rounded-lg h-10 min-h-10 " id="decrease">A <i class="fa fa-caret-down" aria-hidden="true"></i></button> -->
+                            <select class="select select-ghost w-14 bg-gray-200 p-1 rounded-lg h-10 min-h-10 " id="size">
+                              <option value="10px">10</option>
+                              <option value="15px">15</option>
+                              <option disabled selected>17</option>
+                                <option value="18px">18</option>
+                                <option value="20px">20</option>
+                                <option value="22px">22</option>
+                                <option value="24px">24</option>
+                                <option value="26px">26</option>
+                                <option value="28px">28</option>
+                                <option value="30px">30</option>
+                                <option value="32px">32</option>
+                                <option value="34px">34</option>
+                                <option value="36px">36</option>
+                                <option value="38px">38</option>
+                                <option value="40px">40</option>
+                                <option value="42px">42</option>
+                                <option value="44px">44</option>
+                                <option value="46px">46</option>
+                                <option value="48px">48</option>
+                                <option value="50px">50</option>
+                                <option value="60px">60</option>
+                            </select>
+                            <select class="select select-ghost w-14 bg-gray-200 p-1 rounded-lg h-10 min-h-10" id="transform">
+                                <option disabled selected>aA</option>
+                                <option value="lowercase">aa</option>
+                                <option value="uppercase">AA</option>
+                                <option value="capitalize">Aa</option>
+                                
+                            </select>
+                            <input name="Color Picker" type="color" class="w-14 bg-gray-200 p-1 rounded-lg h-10 min-h-10" id="color"/>
+
+
+                        </div>
+                      </div>
+                </div>
+                <div class="flex px-5 pb-5 bg-base-200 ">
+             
+                  <textarea placeholder="Start writing..." id="text" class="textarea textarea-bordered textarea-md w-full h-96 bg-base-100 rounded-xl" ></textarea>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+
+
+
+    <script src="js/notepad.js"></script>
+</body>
+</html>
